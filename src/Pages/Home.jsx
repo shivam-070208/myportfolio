@@ -12,7 +12,7 @@ const Home = () => {
      <div className="intro w-1/2 min-[700px]:text-center min-[440px]:mt-30 min-w-[300px] m-auto">
       <h1 className='block m-auto text-sm text-white'>Hi,</h1>
       <h1 className='introtext'>  I'm Shivam Gupta</h1>
-      <p className='w-2/3 leading-tighter text-white text-justify text-[0.8rem] min-w-[270px]'>A Developer with a passion for creating innovative digital solutions. With a keen eye for detail and a love for learning, I craft unique experiences that blend creativity and functionality. Explore my work to see how I bring ideas to life through design, development, and collaboration.</p>
+      <p className='w-2/3 min-[700px]:w-[70%] leading-tighter text-white text-justify text-[0.8rem] min-w-[270px]'>A Developer with a passion for creating innovative digital solutions. With a keen eye for detail and a love for learning, I craft unique experiences that blend creativity and functionality. Explore my work to see how I bring ideas to life through design, development, and collaboration.</p>
       <button className='mr-4 mt-6 bg-blue-600 px-2 rounded text-white py-1 cursor-pointer'>Explore!</button>
       <button className='mt-6 bg-green-600 px-2 rounded text-white py-1 cursor-pointer'>Hire Me</button>
      </div>
