@@ -26,7 +26,7 @@ const Navbar = ({setCurrentPage}) => {
 
   return (
     <div className="w-screen p-2 flex pt-4 fixed justify-between items-end backdrop-blur-lg">
-      <div className="text-white  "><i class="fa fa-briefcase mr-1" aria-hidden="true"></i>
+      <div className="text-white  "><i className="fa fa-briefcase mr-1" aria-hidden="true"></i>
       Shivam</div>
       <div
         ref={navContainerRef}
@@ -34,13 +34,16 @@ const Navbar = ({setCurrentPage}) => {
       >
         <div
           ref={currentNavRef}
+
           className="bg-green-600 h-8 w-8 rounded-full absolute z-[0] translate-y-[-50%] border-[#090B1B] border-2 transition-all duration-300"
         />
         <Link
           to="/"
           ref={(el) => (linkRefs.current[0] = el)}
           className="z-1 checkedroute"
-          onClick={handleClick}
+          onClick={(e)=>{handleClick(e);
+            setCurrentPage(0)
+          }}
         >
           <i className="fas fa-home text-blue-600"></i>
           <p className="text-[0.3rem] mt-[4px] text-[rgb(2, 9, 80)] font-bold absolute translate-x-[2px]">Home</p>
@@ -50,7 +53,9 @@ const Navbar = ({setCurrentPage}) => {
         <Link
           to="/portfolio"
           ref={(el) => (linkRefs.current[2] = el)}
-          onClick={handleClick}
+          onClick={(e)=>{handleClick(e);
+            setCurrentPage(1)
+          }}
           className="text-center"
           
         >
@@ -61,7 +66,9 @@ const Navbar = ({setCurrentPage}) => {
           href="#"
           ref={(el) => (linkRefs.current[3] = el)}
           
-          onClick={handleClick}
+          onClick={(e)=>{handleClick(e);
+            setCurrentPage(2)
+          }}
           className="text-center"
         >
           <i className="fas fa-graduation-cap text-blue-600"></i>
@@ -74,7 +81,7 @@ const Navbar = ({setCurrentPage}) => {
           
           onClick={handleClick}
         >
-          <i class="fas fa-certificate text-blue-600"></i>
+          <i className="fas fa-certificate text-blue-600"></i>
         <p className="text-[0.3rem] mt-[4px] text-[rgb(2, 9, 80)] font-bold absolute translate-x-[-4px]">Milestones</p>
 
         </Link>
