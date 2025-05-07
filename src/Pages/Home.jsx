@@ -3,14 +3,14 @@ import { Greet } from '../Homeconfig/Greeting';
 
 
 const Home = () => {
-  const splineref = React.useRef(null);
+  
   useEffect(()=>{
     Greet()
   },[])
   return (
     <div className='w-screen flex  min-h-screen max-[440px]:flex-col-reverse pt-10    mb-10 pl-2'>
-     <div className="intro w-1/2 min-[440px]:mt-30 min-w-[300px] m-auto">
-      <h1 className='block m-auto text-sm text-white'>Hi,</h1>
+     <div className="intro w-1/2 min-[700px]:scale-[1.3] min-[440px]:mt-30 min-w-[300px] m-auto">
+      <h1 className='block m-auto text-sm  text-white'>Hi,</h1>
       <h1 className='introtext'>  I'm Shivam Gupta</h1>
       <p className='w-2/3 leading-tighter text-white text-justify text-[0.8rem] min-w-[270px]'>A Developer with a passion for creating innovative digital solutions. With a keen eye for detail and a love for learning, I craft unique experiences that blend creativity and functionality. Explore my work to see how I bring ideas to life through design, development, and collaboration.</p>
       <button className='mr-4 mt-6 bg-blue-600 px-2 rounded text-white py-1 cursor-pointer'>Explore!</button>
