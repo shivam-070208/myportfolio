@@ -18,7 +18,7 @@ body{
 }
 .introtext {
   color: transparent;
-  font-size: 1.7rem;
+  font-size: 2rem;
   background: linear-gradient(90deg, #ff0080 0%, #7928ca 70%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -27,14 +27,14 @@ body{
   background-size: 200%;
   white-space: nowrap;
   border-right: 1px solid white;
-  /* animation: blink 1s step-end infinite; */
+
 }
 @keyframes text {
   from {
    width: 0px;
   }
   to{
-    width: 240px;
+    width: 300px;
   }
  
  
