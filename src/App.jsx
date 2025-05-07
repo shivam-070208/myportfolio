@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect,useState } from 'react';
 import Frame from './Frame'
 import Loader from './loaderwindow/Loader';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -10,7 +10,7 @@ function App() {
     setloading(true)
     setTimeout(()=>{
         setloading(false)
-    },1000)
+    },6000)
  },[])
 
     return (
